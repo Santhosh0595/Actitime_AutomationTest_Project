@@ -29,7 +29,7 @@ public void bsConfig() {
 @AfterSuite
 public void afConfig() {
 	System.out.println("DataBase disconnect Sucessfully");
-	System.out.println("hi");
+	System.out.println("hi hello");
 	
 }
 	
