@@ -19,7 +19,7 @@
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.23.0</version>
+    <version>4.22.0</version>
 </dependency>
 
 <dependency>
@@ -28,12 +28,7 @@
     <version>7.4.0</version>
     <scope>test</scope>
 </dependency>
-  <dependency>
-    <groupId>org.projectlombok</groupId>
-    <artifactId>lombok</artifactId>
-    <version>1.18.26</version> <!-- Or the latest version -->
-    <scope>provided</scope>
-</dependency>
+
   <!-- Apache POI -->
     <dependency>
         <groupId>org.apache.poi</groupId>
