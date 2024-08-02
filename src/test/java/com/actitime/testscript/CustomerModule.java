@@ -11,21 +11,21 @@ import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.actitime.generic.BaseClass;
+import com.actitime.generic.FileLib;
 import com.actitime.pom.HomePage;
 import com.actitime.pom.LoginPage;
 import com.actitime.pom.TaskListPage;
-import com.actitme.generic.BaseClass;
-import com.actitme.generic.FileLib;
 
 import dev.failsafe.internal.util.Assert;
 
 
-@Listeners(com.actitme.generic.ListnerImplementation.class)
+@Listeners(com.actitime.generic.ListnerImplementation.class)
 
 
 public class CustomerModule  extends BaseClass{
 	
-	@Test(retryAnalyzer=com.actitme.generic.IRetryAnalyser.class)
+	@Test(retryAnalyzer=com.actitime.generic.IRetryAnalyser.class)
 	public void createCustomer() throws EncryptedDocumentException, IOException, InterruptedException {
 		
 		Reporter.log("createcustomer",true);
