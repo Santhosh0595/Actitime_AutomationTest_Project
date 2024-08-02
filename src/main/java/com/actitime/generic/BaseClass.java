@@ -1,4 +1,4 @@
-package com.actitme.generic;
+package com.actitime.generic;
 
 
 import java.io.IOException;
