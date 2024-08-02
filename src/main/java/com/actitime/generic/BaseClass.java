@@ -18,7 +18,7 @@ import com.actitime.pom.LoginPage;
 
 
 public class BaseClass {
-public WebDriver driver =null;;
+public WebDriver driver =null;
 
 @BeforeSuite
 public void bsConfig() {
