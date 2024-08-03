@@ -20,11 +20,11 @@ import com.actitime.pom.LoginPage;
 public class BaseClass {
 public WebDriver driver =null;
 
-@BeforeSuite
+@BeforeSuite(alwaysRun = true)
 public void bsConfig() {
 	System.out.println("DataBase Connect Sucessfully");
 }
-@AfterSuite
+@AfterSuite(alwaysRun = true)
 public void afConfig() {
 	System.out.println("DataBase disconnect Sucessfully");
 	System.out.println("hi hello");
@@ -33,7 +33,7 @@ public void afConfig() {
 	
 	//@Parameters("browser")
 	//@BeforeTest
-@BeforeClass
+@BeforeClass(alwaysRun = true)
 public void openBrowser(/*String Browser*/) throws IOException {
     Reporter.log("Launch Browser", true);
     System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe"); // Update path to your chromedriver
@@ -53,7 +53,7 @@ public void openBrowser(/*String Browser*/) throws IOException {
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 }
 //@AfterTest
-@AfterClass
+@AfterClass(alwaysRun = true)
 public void closeBrowser() {
     Reporter.log("Close Browser", true);
     if (driver != null) {
@@ -61,7 +61,7 @@ public void closeBrowser() {
     }
 }
 
-@BeforeMethod 
+@BeforeMethod (alwaysRun = true)
 public void login() throws IOException {
     Reporter.log("Login to application", true);
     FileLib f = new FileLib();
@@ -75,7 +75,7 @@ public void login() throws IOException {
     
 }
 
-@AfterMethod
+@AfterMethod(alwaysRun = true)
 public void logout() {
     Reporter.log("Logout from application", true);
     if (driver != null) {

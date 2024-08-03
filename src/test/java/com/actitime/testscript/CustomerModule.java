@@ -25,7 +25,7 @@ import dev.failsafe.internal.util.Assert;
 
 public class CustomerModule  extends BaseClass{
 	
-	@Test(retryAnalyzer=com.actitime.generic.IRetryAnalyser.class)
+	@Test(groups="SmokeSuite",retryAnalyzer=com.actitime.generic.IRetryAnalyser.class)
 	public void createCustomer() throws EncryptedDocumentException, IOException, InterruptedException {
 		
 		Reporter.log("createcustomer",true);
