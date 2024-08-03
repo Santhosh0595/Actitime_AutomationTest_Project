@@ -11,7 +11,7 @@ import com.actitime.pom.TaskListPage;
 
 @Listeners(com.actitime.generic.ListnerImplementation.class)
 public class CreateNewTask extends BaseClass{
-	@Test(retryAnalyzer=com.actitime.generic.IRetryAnalyser.class)
+	@Test(groups="RegressionSuite",retryAnalyzer=com.actitime.generic.IRetryAnalyser.class)
 	public void newTask() throws IOException {
 		
 		
