@@ -117,6 +117,10 @@
   </build>
   </profile>
 	<profile>
+		<id>Smoke</id>
+  <build>  
+	  <plugins>
+      <plugin>
 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
