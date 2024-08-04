@@ -15,7 +15,7 @@ import com.actitime.pom.TaskListPage;
 @Listeners(com.actitime.generic.ListnerImplementation.class)
 public class ProjectModule extends BaseClass{
 	
-	@Test(retryAnalyzer=com.actitime.generic.IRetryAnalyser.class)
+	@Test(groups="SmokeSuite",retryAnalyzer=com.actitime.generic.IRetryAnalyser.class)
 	public void createNewProject() throws EncryptedDocumentException, IOException {
 		 
 		FileLib project=new FileLib();

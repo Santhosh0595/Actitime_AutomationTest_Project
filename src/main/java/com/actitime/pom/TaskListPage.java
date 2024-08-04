@@ -14,7 +14,7 @@ public class TaskListPage {
 		@FindBy(xpath="//*[@id=\"taskManagementPage\"]/div[1]/div[1]/div[1]/div[1]/div[3]/div")
 		public WebElement addnewbtn;
 		
-		@FindBy(xpath = "//*[@id=\"customerLightBox_content\"]/div[2]/div[1]/div/div[1]/div[1]/input")
+		@FindBy(xpath = "//div[@class='customerNameDiv']/input")
 		public WebElement customername;
 		
 		
@@ -71,7 +71,7 @@ public class TaskListPage {
 		@FindBy(xpath="/html/body/div[20]/div[2]")
 		public WebElement newProject;
 		
-		@FindBy(xpath="//*[@id=\"createProjectPopup_content\"]/div[2]/div[1]/div/div[1]/div[1]/input")
+		@FindBy(xpath="//input[@class='projectNameField inputFieldWithPlaceholder inputNameField']")
 		public WebElement ProjectName;
 		
 		@FindBy(xpath = "//*[@id=\"createProjectPopup_content\"]/div[2]/div[1]/div/div[1]/div[1]/div[2]/div[2]/div/div[1]/div[3]")
